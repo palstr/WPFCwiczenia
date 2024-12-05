@@ -1,0 +1,19 @@
+﻿<Window x:Class="cwiczeniakupka.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cwiczeniakupka"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <UniformGrid Columns="2">
+        <Image x:Name="image2" Source="kaczucha.jpg"></Image>
+        <StackPanel>
+            <RadioButton GroupName="obrazki" x:Name="kaczka1">KACZKA1</RadioButton>
+            <RadioButton GroupName="obrazki" x:Name="kaczka2">KACZKA2</RadioButton>
+            <RadioButton GroupName="obrazki" x:Name="kaczka3">KACZKA3</RadioButton>
+        <Button Click="Button_Click" Margin="40">POKAŻ</Button>
+            <TextBlock x:Name="msg"></TextBlock>
+        </StackPanel>
+    </UniformGrid>
+</Window>
